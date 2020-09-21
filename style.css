@@ -1,0 +1,16 @@
+h1{
+    color: chartreuse;
+}
+
+h2{
+    color: coral;
+}
+
+h3{
+    color: aliceblue;
+    background-color: firebrick;
+    border: solid;
+    border-color: chocolate;
+    border-bottom: dotted;
+    border-bottom-left-radius: 30px;
+}
