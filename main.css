@@ -1,6 +1,20 @@
+body {
+    background-image: url(lo_sadius_color.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 .container {
-    background: linear-gradient(to left, #00ccff, #b3f0ff);
-    box-shadow: 3px 5px black;
+    /*background: linear-gradient(to left, #00ccff, #b3f0ff);
+    box-shadow: 3px 5px black;*/
+}
+
+.borderImg {
+    height: 300px;
+    width: auto;
+    border: 10px solid white;
 }
 
 h1 {
