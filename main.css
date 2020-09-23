@@ -17,14 +17,11 @@ body {
     border: 10px solid white;
 }
 
-h1 {
+h1, h2, h3, .class, #id {
     color: #ffffff;
-    text-shadow: -2px -2px 5px black;
-}
-
-h2 {
-    color: rgb(0, 204, 255);
-    text-shadow: 1px 1px 3px darkblue;
+    text-shadow: 2px 2px 5px black;
+    line-height: 1rem;
+    font-family: fantasy;
 }
 
 ul li {
@@ -33,7 +30,7 @@ ul li {
 }
 
 ul > li {
-    color: skyblue;
+    color: gold;
 }
 
 ul > ol > li {
