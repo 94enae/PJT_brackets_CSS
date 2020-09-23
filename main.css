@@ -12,7 +12,7 @@ body {
 }
 
 .borderImg {
-    height: 300px;
+    height: 150px;
     width: auto;
     border: 10px solid white;
 }
@@ -25,4 +25,17 @@ h1 {
 h2 {
     color: rgb(0, 204, 255);
     text-shadow: 1px 1px 3px darkblue;
+}
+
+ul li {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+ul > li {
+    color: skyblue;
+}
+
+ul > ol > li {
+    color: aquamarine;
 }
