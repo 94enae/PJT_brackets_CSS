@@ -24,9 +24,33 @@ h1, h2, h3, .class, #id {
     font-family: fantasy;
 }
 
+html body div.container h1#example {
+    color: cornflowerblue;
+} // 114
+
+#example {
+    color: darkred;
+} /*100*/
+
+[id="example"] {
+    color: orange;
+} /*10*/
+
+.container h1 {
+    color: darkgreen;
+} /*10*/
+
+div h1 {
+    color: darkblue;
+} /*2*/
+
+h1 {
+    color: orangered!important;
+} /*only use for bootstrap, normalize CSS*/
+
 ul li {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 ul > li {
@@ -34,5 +58,5 @@ ul > li {
 }
 
 ul > ol > li {
-    color: aquamarine;
+    color: dodgerblue;
 }
