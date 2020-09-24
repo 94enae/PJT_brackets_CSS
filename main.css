@@ -45,8 +45,16 @@ img {
     height: auto;
     padding: 5px;
     opacity: 0.73;
-    display: block;
-    margin: auto;
+    margin-bottom: 60px;
+}
+
+button {
+    color: ghostwhite;
+    background: gray;
+    border-radius: 30px;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px;
 }
 
 h1 {
