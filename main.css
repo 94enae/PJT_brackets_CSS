@@ -32,9 +32,21 @@ html body div.container h1#example {
 }
 
 .borderImg {
-    height: 150px;
-    width: auto;
+    
+    width: 200px;
+    height: auto;
     border: 10px solid white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 0.73;
+    display: block;
+    margin: auto;
 }
 
 h1 {
