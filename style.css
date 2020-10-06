@@ -57,6 +57,30 @@ ul.topnav li.dropdownIcon {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }/*make all list disappear when width goes down below 680px except for 1st child of that list.*/
-}
-
     
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+        /*Don't want this list to be placed in random place. Just to make sure.*/
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}

@@ -7,15 +7,32 @@
     
     <body>
         <nav>
-            <ul class="topnav"> <!--unordered list-->
+            <ul class="topnav" id="dropdownClick"> <!--unordered list-->
+            <!--mainuse for id is interacting with JAVA script-->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
                 <li class="topnav-right"><a href="#signup">Sign Up</a></li>
                 <li class="topnav-right"><a href="#signin">Sign In</a></li>
-                <li class="dropdownIcon"><a href="">&#9776;</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                <!--javascript:void(0) refets to path that is undefined so it makes browser to just stay in that state.-->
             </ul> 
         </nav>
+        
+        <script>
+            function dropdownMenu() {
+                var menu = document.getElementById("dropdownClick");
+                
+                if(menu.className === "topnav") {
+                    menu.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                } else {
+                  menu.className = "topnav";  
+                }
+            }
+        </script>
+        
+        <!--First, browser checks if maximum width is over 680 or not(mobile or not). Then creates three-line-cipher if it's below 680. Next, If user clicks the cipher, browser creates new class called topnav.responsive that can be used in media quary.-->
     </body>
 </html>
