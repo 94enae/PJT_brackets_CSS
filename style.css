@@ -1,16 +1,48 @@
-h1{
-    color: chartreuse;
+/*######## Defaults ########*/
+nav, header, footer {
+    display: block;
 }
 
-h2{
-    color: coral;
+body {
+    line-height: 1;
+    margin: 0;
+    
 }
 
-h3{
-    color: aliceblue;
-    background-color: firebrick;
-    border: solid;
-    border-color: chocolate;
-    border-bottom: dotted;
-    border-bottom-left-radius: 30px;
+/*######## Nav bar ########*/
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden; /*don't show everything when window is collapsed.*/
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none; /*guarentee that no bullet point is inserted*/
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+    /*setting when mouse is over the area*/
 }
