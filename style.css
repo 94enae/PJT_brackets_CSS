@@ -44,5 +44,19 @@ ul.topnav li a {
 ul.topnav li a:hover {
     background-color: #0080ff;
     color: #fff;
-    /*setting when mouse is over the area*/
+    /*setting when mouse is over the anker area*/
 }
+
+ul.topnav li.dropdownIcon {
+    display: none;
+    /*hide icon when it's displaying on desktop*/
+}
+
+/*######## Mobile ########*/
+@media screen and (max-width: 680px) /*detect device width*/ {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }/*make all list disappear when width goes down below 680px except for 1st child of that list.*/
+}
+
+    
