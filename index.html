@@ -20,6 +20,30 @@
             </ul> 
         </nav>
         
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6 leftSide-col"> <!--adding class to the class-->
+                    <div>
+                        <h1 class="large">Crazy Radness</h1>
+                        <h1 class="large">Made for Developers</h1>
+                    </div>
+                    <form>
+                        <div>
+                            <h2>Username</h2>
+                            <input class="inputbox" name="username" type="text" placeholder="Username">
+                            <h2>Password</h2>
+                            <input class="inputbox" name="password" type="text" placeholder="Password">
+                        </div>
+                        <!--type="text" gives us a way to interact with an element-->
+                    </form>
+                </div>
+                <div clss="col-9">
+                    
+                </div>
+            </div>
+        </div>
+        <!--this gradient is only going to effect in this section so it's fine to apply it with an 'id'.-->
+        
         <script>
             function dropdownMenu() {
                 var menu = document.getElementById("dropdownClick");
@@ -32,7 +56,6 @@
                 }
             }
         </script>
-        
         <!--First, browser checks if maximum width is over 680 or not(mobile or not). Then creates three-line-cipher if it's below 680. Next, If user clicks the cipher, browser creates new class called topnav.responsive that can be used in media quary.-->
     </body>
 </html>
