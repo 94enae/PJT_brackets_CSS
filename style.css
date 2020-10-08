@@ -84,6 +84,13 @@ ul.topnav li.dropdownIcon {
     display: none;
     /*hide icon when it's displaying on desktop*/
 }
+/*
+
+.col-6 {
+    width: 100%;
+    margin: 0;
+}
+*/
 
 /*######## Custon Styles ########*/
 #section-1-gradient {
@@ -91,11 +98,15 @@ ul.topnav li.dropdownIcon {
     background: -webkit-linear-gradient(#076DFF, #65); /* For Sagari 5.1 to 6.0 */
     background: -o-linear-gradient(#076DFF, #65); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#076DFF, #65); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#076DFF, #65a5ff); /* Standard syntax */
+    background: linear-gradient(#076, #5ff); /* Standard syntax */
 }
 
-.leftSide-col {
+div.leftSide-col {
     margin-left: 30%;
+}
+
+div.rightSide-col {
+    margin-left: 15% 
 }
 
 h1.large {
@@ -115,6 +126,7 @@ input[type="text"] {
     width: 400px;
     min-width: 100px;
     padding: 5px;
+    border-radius: 7px;
 }
 
 /*######## Mobile ########*/
@@ -147,5 +159,25 @@ input[type="text"] {
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
+    }
+    
+    .col-6 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.leftSide-col, div.rightSide-col {
+        margin: 15px;
+    }
+    
+    input[type="text"] {
+        width : 350px;
+    }
+    
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
     }
 }
