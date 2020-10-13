@@ -9,6 +9,16 @@ body {
     
 }
 
+label {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+p {
+    font-size: :28px;
+    line-height: 1.2;
+}
+
 .container {
     width: 100%;
     margin: auto; /*keeps everything in center*/
@@ -41,6 +51,11 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+    /*Just include the padding in the margin into the size of the element. So if you add 5px of margin in 100px width-size of element, initial element size becomes 110px including left, right margin.*/
+}
 
 /*######## Nav bar ########*/
 nav {
@@ -101,6 +116,41 @@ ul.topnav li.dropdownIcon {
     background: linear-gradient(#076, #5ff); /* Standard syntax */
 }
 
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+    /*Hotiaontal length(0), Vertical length(0), Blur radius(0), Spread radius(1px), Shadow color(0), Background color(0), Box color(0), Opacity(.15)*/
+}
+
+button {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.icon img {
+    width: 100px;
+}
+
 div.leftSide-col {
     margin-left: 30%;
 }
@@ -115,6 +165,11 @@ h1.large {
     font-size: 56px;
     margin: 0;
     line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
 }
 
 form h2 {
@@ -162,9 +217,17 @@ input[type="text"] {
         text-align: left;
     }
     
-    .col-6 {
+    h1.section2Header {
+        font-size: 40px;
+    }
+    
+    .col-6, .col-4 {
         width: 100%;
         margin: 0;
+    }
+    
+    .div.box {
+        padding: 5px;
     }
     
     div.leftSide-col, div.rightSide-col {
@@ -178,6 +241,7 @@ input[type="text"] {
     .videoContainer iframe {
         position: relative;
         width: 100%;
+        height: auto;
         margin: 0;
         overflow: hidden;
     }
