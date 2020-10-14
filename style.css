@@ -19,6 +19,11 @@ p {
     line-height: 1.2;
 }
 
+article p {
+    font-size: 15px;
+    padding: 10px;
+}
+
 .container {
     width: 100%;
     margin: auto; /*keeps everything in center*/
@@ -126,6 +131,13 @@ div.box {
     /*Hotiaontal length(0), Vertical length(0), Blur radius(0), Spread radius(1px), Shadow color(0), Background color(0), Box color(0), Opacity(.15)*/
 }
 
+div.slopeIcon img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15), 2px 2px 4px 2px rgba(0,0,0,1);
+    width: 400px;
+}
+
 button {
     font-size: 24px;
     font-weight: 500;
@@ -221,13 +233,26 @@ input[type="text"] {
         font-size: 40px;
     }
     
-    .col-6, .col-4 {
+    article p {
+        font-size: 15px;
+    }
+    
+    .col-7,.col-6,.col-5,.col-4 {
         width: 100%;
         margin: 0;
     }
     
-    .div.box {
+    div.box {
         padding: 5px;
+    }
+    
+    div.slopeIcon {
+        margin: 10px;/*Compare margin b/w the margin in slopeIcon.img.*/
+    }
+    
+    div.slopeIcon img {
+        width: 80%;
+        margin: 0% 10%;/*It;s important to understand the difference b/w these area and how does it works.*/
     }
     
     div.leftSide-col, div.rightSide-col {
