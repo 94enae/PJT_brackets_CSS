@@ -197,6 +197,30 @@ input[type="text"] {
     border-radius: 7px;
 }
 
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;/*if you use margin, extra space comes 'outside' of the selected area.*/
+}
+
+footer.footsy h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: .5;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer.footsy ul li {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 /*######## Mobile ########*/
 @media screen and (max-width: 680px) /*detect device width*/ {
     ul.topnav li:not(:nth-child(1)) {
@@ -239,7 +263,12 @@ input[type="text"] {
     
     .col-7,.col-6,.col-5,.col-4 {
         width: 100%;
-        margin: 0;
+        margin: 0;/*Check mobileStack when setting identical style to many class.*/
+    }
+    
+    div.mobileStack {
+        width: 50%;
+        display: block;
     }
     
     div.box {
